@@ -1,17 +1,25 @@
 # TwoMillion - Linux (Easy)
+## Summary
+TwoMillion is a easy-difficulty Linux machine on Hack The Box that involves web enumeration, JavaScript analysis, and API exploitation. After discovering a hidden invite generation endpoint, the user leverages BurpSuite to analyze HTTP requests and eventually gains a foothold via a reverse shell. Privilege escalation is achieved by exploiting a known kernel vulnerability, leading to root access.
 ## Nmap Enumeration
+
 We begin with a simple nmap scan to see what ports are open
 ![Image](https://github.com/user-attachments/assets/2a4fad03-3938-45d8-b874-909f2adf62ca)
 After that add the targets machine ip to our /etc/hosts file
 ![Image](https://github.com/user-attachments/assets/555552a1-d2e0-4bc1-9a8f-2f604bcf078f)
 ## Directory enumeration
+
 Now with the help of any directory brute forcing tool we look up a couple directories
 ![Image](https://github.com/user-attachments/assets/61811d99-6796-471d-a061-b716e462c045)
 We see a couple directories but /js/inviteapi.min.js cought my attention
+## Finding vulnerability
+
 ![Image](https://github.com/user-attachments/assets/b8bc79b3-f4e6-4e53-9635-93387f548b5d)
 Navigting to it shows a JS(JavaScript) code that does a couple things
 and one of the important things is that it sends AJAX request to /api/v1/invite/how/to/generate and the methood is POST
 Now with curl we can look up the directory /api/v1/invite/how/to/generate and we get a message 
+
+## Exploiting the vulnerability
 ![Image](https://github.com/user-attachments/assets/961d29c7-9c42-4eb9-8771-4941c1051597)
 Now with the help of a site called CyberChef we can decrypt the message
 ![Image](https://github.com/user-attachments/assets/5193ac1a-91fa-4116-8bc3-f569bb431701)
@@ -72,5 +80,9 @@ after downloading the CVE with the help of a python server we are going to trans
 ![image](https://github.com/user-attachments/assets/7a2fb9b0-8ee0-4190-98b4-a2865bcaaa37)
 ![image](https://github.com/user-attachments/assets/a72ee8e8-09c0-4535-8e58-a2253e68e361)
 
+after following the instructions on the github repo we are able go get root accsess and capture the root flag
+![image](https://github.com/user-attachments/assets/7b4290d0-2601-4cd2-8d35-9a1343b857e2)
+
+<img width="216" alt="image" src="https://github.com/user-attachments/assets/4adaee00-0d7b-43b4-a503-bd3b82d3b1c8" />
 
 
