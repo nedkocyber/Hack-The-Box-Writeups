@@ -1,4 +1,4 @@
-# Blocky - Easy(Linux)
+# Blocky - Linux(Easy)
 
 ## Summary
 Blocky is an easy-level Linux machine that highlights insecure software development practices. Initial enumeration reveals a WordPress website, and directory brute-forcing uncovers a /plugins directory containing .jar files. Decompiling BlockyCore.jar exposes hardcoded MySQL credentials. Using a username from the blog and the recovered password, SSH access is gained as the user notch. Privilege escalation is straightforward, as notch has full sudo permissions, allowing root access via sudo su.
