@@ -1,4 +1,4 @@
-# Forest - Easy(Windows)
+# Forest - Windows(Easy)
 ##
 ##
 ##
