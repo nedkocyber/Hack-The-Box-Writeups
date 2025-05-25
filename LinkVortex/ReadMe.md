@@ -1,4 +1,4 @@
-# LinkVortex - Easy(Linux)
+# LinkVortex - Linux(Easy)
 ## Summary
 LinkVortex is an easy-difficulty Linux machine that emphasizes web enumeration and symbolic link exploitation. Initial access is obtained by discovering an exposed .git directory on a development subdomain, allowing retrieval of credentials for the Ghost CMS. Exploiting a vulnerability in Ghost (CVE-2023-40028), authenticated users can upload symbolic links to read arbitrary files within the container. This leads to the extraction of SSH credentials and user access. Privilege escalation is achieved by exploiting a symlink race condition (TOCTOU) in a script with sudo permissions, ultimately granting root access.
 
