@@ -27,13 +27,43 @@ from this file we get a password
 
 ![image](https://github.com/user-attachments/assets/a949b60b-8fb7-476a-a585-42a3da2c97bc)
 
-now we try logging in with te credentials
+now we try logging in with the credentials
 ![image](https://github.com/user-attachments/assets/4fb2f393-6796-4de5-a1a4-7cf79b876697)
 Important tip: Always try default credentials like root,admin,toor and etc
 
-After logging in we satrt looking for important data like versions,
+After logging in we satrt looking for important data like versions, public credentias and etc 
+We find a Version for the application 
+![image](https://github.com/user-attachments/assets/4e7b0ba8-dca9-48da-8259-aeeef251e55e)
+Important tip:When we find a version we always check if its the latest version of the application because if its outdated there is a big possibility there will be an explooit for it 
+
+We find a repo in github that shows how to use the exploit for our needs
+![image](https://github.com/user-attachments/assets/646cd51a-4d44-4de2-90aa-76cfc680c5fe)
+after succsesfuly running the exploit we can use the Dockerfile.ghost file we found earlier and paste the path to the file
+![image](https://github.com/user-attachments/assets/da8c2c4b-d43c-4e7f-b8ac-f56ab0f66272)
 
 
+after pasteing the lifepath we see credentials
+
+![image](https://github.com/user-attachments/assets/f266e3be-ffb6-43af-bf4d-cbb7147e6639)
+
+ Whit them we try logging via ssh and cat the user.txt flag
+ <img width="197" alt="image" src="https://github.com/user-attachments/assets/bf9b9d6b-a719-480d-a0f3-1ba2f29a4eea" />
+ ## Privilege escalation
+
+ We see that we can run this without the need of root password
+ ![image](https://github.com/user-attachments/assets/dcd6b9cf-beba-4dbe-99ca-db65e024a8a6)
+
+ ![image](https://github.com/user-attachments/assets/31e483df-6ba4-4d68-9a78-be30963d08ad)
+
+The main vulnerability in this script is command injection through the unchecked variable CHECK_CONTENT
+
+Also another tip is if you are struggling with coding in general to use chatgpt or any AI to help you analyze the code for potential vulnerabilities 
+
+Here we will use symlinks to read the contents of the root flag 
+<img width="514" alt="image" src="https://github.com/user-attachments/assets/f4ebc07d-e5dc-46e1-8d89-0c628b9f9273" />
+
+
+ 
 
 
 
