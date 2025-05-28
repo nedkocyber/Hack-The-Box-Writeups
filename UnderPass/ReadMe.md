@@ -9,12 +9,22 @@ We start with a full port scan and after we see what ports are open we scan them
 ![image](https://github.com/user-attachments/assets/956216aa-7af6-43b9-8b95-b672a92411a6)
 
 ## Snmp Enumeration
+After running snmp we see a couple of important data to us
+
+<img width="485" alt="image" src="https://github.com/user-attachments/assets/1cb24882-15f9-4e9b-bd0c-e381f40a51ee" />
 
 
 ## Directory Enumeration
-Since there is nothing on port 80 we try scaning for sub directories
 
+After we found the sub directory daloradius we try a recursive scan with ferox buster
+![image](https://github.com/user-attachments/assets/b87beb8a-0c49-46a2-af37-fac4e3142c2a)
 
+We find 2 login pages but we dont have any credentials for either
+![image](https://github.com/user-attachments/assets/0a36b9bd-7af5-4b25-9c9a-50ff71f325f6)
+
+**Pro Tip**: Whenever you encounter a login interface, it's good practice to test for default credentials. Many applications ship with preset logins that are often overlooked during deployment. Cross-reference with known default credential lists or official documentation to identify potential low-hanging access points.
+
+![image](https://github.com/user-attachments/assets/0cd7ad4c-da00-4c2f-a777-4a5b464e355a)
 
 
 
