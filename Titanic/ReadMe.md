@@ -69,10 +69,21 @@ Now with the password and the name we got we log via ssh and get the user flag
 <img width="958" height="862" alt="image" src="https://github.com/user-attachments/assets/bd8399f7-0a75-4a23-b5f7-a6de3e3e91ba" />
 <img width="200" height="24" alt="image" src="https://github.com/user-attachments/assets/4af727ae-015d-4fe9-bdd0-1695d7853930" />
 
+## Privilege Escalation
+
+<img width="648" height="201" alt="image" src="https://github.com/user-attachments/assets/c87ba57e-11c0-48bf-b017-99c7fbde7f64" />
+
+With this command, we identify which files or directories are writable—this is crucial information when attempting privilege escalation
+
+<img width="1018" height="80" alt="image" src="https://github.com/user-attachments/assets/bf8d555c-866f-4730-b6b1-a97dd031d16a" />
+After that we find this file in /opt/scripts 
 
 
+This script automates the collection of image metadata by enumerating all .jpg files in the specified directory. It utilizes the identify tool from ImageMagick to extract relevant properties, storing the results in metadata.log.
 
+<img width="1046" height="116" alt="image" src="https://github.com/user-attachments/assets/8789860a-00ce-4bb9-b387-e13b9cfa5279" />
 
+Pro Tip: Always research for known vulnerabilities, either on GitHub repositories or across the web in general. Staying aware of public exploits or misconfigurations can save a lot of time during testing.
 
 
 
