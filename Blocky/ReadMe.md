@@ -32,4 +32,5 @@ Now we log via ssh with the credentials Notch:8YsqfCTnvxAUeduzjNSXe22
 
 ## Privilege Escalation
 The password for root is the same as for the normal user so just sudo su type the password and cat the root flag
+
 <img width="202" alt="image" src="https://github.com/user-attachments/assets/59ced4a0-a20d-4dea-ac42-9dcc5588e803" />
