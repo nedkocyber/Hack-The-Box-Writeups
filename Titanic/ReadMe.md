@@ -85,8 +85,20 @@ This script automates the collection of image metadata by enumerating all .jpg f
 
 Pro Tip: Always research for known vulnerabilities, either on GitHub repositories or across the web in general. Staying aware of public exploits or misconfigurations can save a lot of time during testing.
 
+<img width="1031" height="446" alt="image" src="https://github.com/user-attachments/assets/5e5dcbc5-d5c7-4799-aaad-3fcb4b5cc9f0" />
 
 
+From the identify_images.sh script, we learn that its working directory is /opt/app/static/assets/images/. Earlier, we discovered that this directory is writable, which allows us to create a malicious libxcb.so.1 shared library. This library copies the contents of /root/root.txt and changes its permissions, enabling us to read the flag.
 
+An alternative approach would be to inject /bin/bash into the code, granting direct root access.
+
+<img width="1040" height="44" alt="image" src="https://github.com/user-attachments/assets/6c87a634-c69f-4907-a087-87c987f569b3" />
+
+After looking the summary for the exploit in github we are able to get the root flag
+
+<img width="1047" height="567" alt="image" src="https://github.com/user-attachments/assets/9b07dcd0-0148-4542-aad4-da86ff4b367f" />
+<img width="672" height="213" alt="image" src="https://github.com/user-attachments/assets/a53ff3e5-8e71-444d-a6f4-a3cb38a35da0" />
+
+<img width="377" height="26" alt="image" src="https://github.com/user-attachments/assets/18504270-7e9c-41a0-845d-1eb84004641c" />
 
 
