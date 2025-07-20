@@ -57,8 +57,17 @@ Here we Download the contents of the app.ini file
 
 <img width="1042" height="63" alt="image" src="https://github.com/user-attachments/assets/2fb2860b-63ee-4bdc-94e6-3b8b7d8ba643" />
 
+Tip: I ran into issues downloading the file and reading its contents because I didn’t realize the desktop directory had global write permissions. Also, the /tmp directory wasn’t available for this, so I had to adjust my approach accordingly.
 
+<img width="510" height="19" alt="image" src="https://github.com/user-attachments/assets/8d171072-1876-49d2-9021-931ced8ec59b" />
+<img width="539" height="20" alt="image" src="https://github.com/user-attachments/assets/b7a50aea-ad55-423a-9dcb-2a67dd9ca933" />
 
+After cracking the hash we get the password
+<img width="1029" height="52" alt="image" src="https://github.com/user-attachments/assets/68fc61a6-963c-4a6f-90fc-912289f21203" />
+
+Now with the password and the name we got we log via ssh and get the user flag
+<img width="958" height="862" alt="image" src="https://github.com/user-attachments/assets/bd8399f7-0a75-4a23-b5f7-a6de3e3e91ba" />
+<img width="200" height="24" alt="image" src="https://github.com/user-attachments/assets/4af727ae-015d-4fe9-bdd0-1695d7853930" />
 
 
 
