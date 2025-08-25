@@ -75,4 +75,6 @@ And we are successful with the user johncusack.
 
 <img width="196" height="25" alt="image" src="https://github.com/user-attachments/assets/5fae6b24-c0e3-4d07-b33c-fc91d2790056" />
 
-## 
+## Privilege escalation
+
+
