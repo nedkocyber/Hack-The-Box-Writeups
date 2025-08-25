@@ -12,6 +12,8 @@ We start by performing an Nmap scan to enumerate open ports and identify running
 
 From the Nmap scan, we immediately notice a Git repository exposed on the web server. To ensure we have a comprehensive view of the attack surface, we run a Gobuster scan. This helps enumerate additional directories and files, potentially expanding our attack vectors and highlighting other entry points for exploitation.
 
+## Directory Enumeration
+
 <img width="1038" height="41" alt="image" src="https://github.com/user-attachments/assets/6edd25b2-2492-48d7-b0fa-1378d9db4b2d" />
 
 From the Gobuster scan, we confirm the presence of the /.git directory.
