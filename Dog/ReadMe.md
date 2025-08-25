@@ -72,9 +72,15 @@ We retrieve the contents of /etc/passwd and identify potential user accounts. Us
 And we are successful with the user johncusack.
 
 <img width="487" height="50" alt="image" src="https://github.com/user-attachments/assets/464bda89-b365-496a-8778-b08fede06400" />
-
+We get the user flag.
 <img width="196" height="25" alt="image" src="https://github.com/user-attachments/assets/5fae6b24-c0e3-4d07-b33c-fc91d2790056" />
 
 ## Privilege escalation
 
+The privilege escalation on this machine is very straightforward.
 
+<img width="1042" height="120" alt="image" src="https://github.com/user-attachments/assets/8a3fe241-6a04-4e02-bb96-a29b1de10ea2" />
+
+The sudo -l output reveals that the user johncusack can run /usr/local/bin/bee with elevated privileges and without sudo password.
+
+<img width="524" height="23" alt="image" src="https://github.com/user-attachments/assets/a9111c57-e8a7-49c3-9377-d07bbe0674c4" />
