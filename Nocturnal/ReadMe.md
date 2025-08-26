@@ -17,6 +17,8 @@ At this stage, we’re presented with the option to either log in or register. N
 
 <img width="991" height="505" alt="image" src="https://github.com/user-attachments/assets/f4e0e7cd-235e-452c-8e52-111288a56356" />
 
+
+## Exploitation
 Upon logging in, I immediately identified a file upload functionality. The most straightforward approach in such scenarios is to attempt uploading a reverse shell to establish initial access.
 
 <img width="868" height="548" alt="image" src="https://github.com/user-attachments/assets/7c7ddeba-0365-4761-9bad-495e303dc499" />
