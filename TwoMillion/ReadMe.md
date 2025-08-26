@@ -69,7 +69,7 @@ with the givven creds we login with ssh and get the user flag
 
 <img width="203" alt="image" src="https://github.com/user-attachments/assets/9a16f6cc-833b-41f7-993d-09e3c5250922" />
 
-## privilege escalation
+## Privilege escalation
 ![image](https://github.com/user-attachments/assets/8fdb91f6-6650-435e-b795-f185494ee1ab)
 
 with the given version we look it up for any vulnerabilities and we find this CVE
