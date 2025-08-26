@@ -36,6 +36,8 @@ After looking around for a bit we find in this repo valuable information
 
 <img width="1016" height="336" alt="image" src="https://github.com/user-attachments/assets/7079a86b-5580-4dff-ab59-3f64786ae3cb" />
 
+If coding isn’t your strong
+
 Pro Tip: If coding isn’t your strong suit, just grab the code, drop it into ChatGPT, and ask it to sniff out potential vulnerabilities — saves time and catches things you might miss.
 
 In this case, the Python code lacks proper path validation.
