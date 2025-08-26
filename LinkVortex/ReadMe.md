@@ -17,6 +17,9 @@ after the directory brute forcing we find 1 usefull for us direcotry
 ![image](https://github.com/user-attachments/assets/26f48134-4546-4306-80a7-6ac76a08ec25)
 At first nothing inturesting but its important to download all files from here because there can be hidden files
 ![image](https://github.com/user-attachments/assets/1b5c03f7-8604-46d5-af5c-7b32f914e7bf)
+
+## Exploitation
+
 With that command we download all web content from the page and we start looking
 ![image](https://github.com/user-attachments/assets/add091a0-71b3-4c0f-86ac-3f4897b03f51)
 this file is going to important in a bit
