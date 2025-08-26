@@ -18,6 +18,8 @@ Because the file is encrypted we decrypt it and read the contents of it
 ![image](https://github.com/user-attachments/assets/2317c0b1-c307-4722-b5dd-801438a5436c)
 After finding the credentials we log in phpmyadmin 
 
+## Exploitation
+
 ![image](https://github.com/user-attachments/assets/30cb92b2-c458-4477-9cd0-59f9cb36e5a7)
 
 And we find the user notch
