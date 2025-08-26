@@ -24,6 +24,7 @@ During every web application pentest always inspect the source code. It may cont
 
 ![image](https://github.com/user-attachments/assets/01dd9f16-2214-4f03-8a53-8eb7372b4691)
 
+## Exploitation
 
 After finding the version we look it up for vulnerabilities 
 
