@@ -20,6 +20,8 @@ From the Gobuster scan, we confirm the presence of the /.git directory.
 
 <img width="720" height="21" alt="image" src="https://github.com/user-attachments/assets/49be0ee6-d57b-416e-8a1d-c50d87173036" />
 
+## Exploitation
+
 After discovering the /.git directory, we attempt to dump it using git-dumper to extract the repository and search for sensitive information. It’s generally a good idea to download all the files locally, since browsing them directly over the internet may not reveal the complete repository structure, and important files or hidden details could easily be missed.
 
 <img width="928" height="585" alt="image" src="https://github.com/user-attachments/assets/9831f7ec-8103-4fa0-95cb-24be6999883d" />
